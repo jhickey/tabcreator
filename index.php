@@ -6,11 +6,11 @@
     // create facebook object
     $facebook = new Facebook(array(
 
-        'appId'     =>  APP_ID,
-        'secret'    =>  APP_SECRET,
+        'appId'     =>  548825521848268,
+        'secret'    =>  1c2c27cebadd9257ddc30c3ca3e263b7,
         'cookie'    =>  true
 
-    ));     
+    ));
 
     // get signed request
     $signedRequest = $facebook->getSignedRequest();
@@ -40,7 +40,6 @@
         <link rel="stylesheet" href="css/style.css">
 
     </head>
- 
     <body>
 
         <!-- Wrapper that encloses the entire content -->
@@ -49,47 +48,17 @@
             <!-- YOUR CONTENT GOES HERE -->
             <div id="content">
 
-                <?php 
-
-                /* ---------------------------------------------*/
-                /* ------- CONTENT FOR GERMAN VISITORS -------- */
-                /* ---------------------------------------------*/
-
-                if ($language_DE) { ?>
-
                     <!-- ********** THIS CAN BE VIEWED BY FANS ONLY ********** -->
                     <?php if ($userIsFan) { ?>
-
-                        <p>Benutzer ist ein Fan</p>
-
-                    <!-- ********** THIS CAN BE VIEWED BY NON-FANS ONLY ********** -->
-                    <?php } else { ?>
-
-                        <p>Benutzer ist kein Fan</p>
-
-                    <?php }
-
-                } 
-
-                /* ---------------------------------------------*/
-                /* ------- CONTENT FOR ENGLISH VISITORS ------- */
-                /* ---------------------------------------------*/
-
-                else { ?>
-
-                    <!-- ********** THIS CAN BE VIEWED BY FANS ONLY ********** -->
-                    <?php if ($userIsFan) { ?>
-
+                        <p>Hello World</p>
                         <p>User is a fan</p>
 
                     <!-- ********** THIS CAN BE VIEWED BY FANS ONLY ********** -->
                     <?php } else { ?>
-
+                        <p>Hello World</p>
                         <p>User is not a fan</p>
 
                     <?php } ?>
-
-                <?php } ?>
 
             </div>
 
