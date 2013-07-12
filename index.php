@@ -6,8 +6,8 @@
     // create facebook object
     $facebook = new Facebook(array(
 
-        'appId'     =>  548825521848268,
-        'secret'    =>  1c2c27cebadd9257ddc30c3ca3e263b7,
+        'appId'     =>  '548825521848268',
+        'secret'    =>  '1c2c27cebadd9257ddc30c3ca3e263b7',
         'cookie'    =>  true
 
     ));
